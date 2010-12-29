@@ -51,6 +51,10 @@ echo -e '\033[32m == AMBIENTES RUBY E RVM INSTALADOS! ==\033[m\n\n'
 echo -e '\033[32m ---> Configurando git...\033[m\n'
 
 ssh-keygen -t rsa
-git config --global user.name "Luciano Marques"
+git config --global user.name "luciano073"
 git config --global user.email "luciano073@gmail.com"
+git config --global color.status "auto"
+git config --global color.branch "auto"
+git config --global color.interactive "auto"
+git config --global color.diff "auto"
 
