@@ -38,7 +38,7 @@ bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
 
 echo "[[ -s \$HOME/.rvm/scripts/rvm ]] && source \$HOME/.rvm/scripts/rvm" >> "$HOME/.bashrc"
 
-echo "export PS1='\w \$(~/.rvm/bin/rvm-prompt i v g) \$(git branch 2> /dev/null)\n\[\033[37m\]\\$\[\033[32m\] '" >> "$HOME/.bashrc"
+echo "export PS1='\w \$(~/.rvm/bin/rvm-prompt i v g) \$(git branch 2> /dev/null | grep -e ^* | sed -E s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /)\n\[\033[37m\]\\$\[\033[00m\] '" >> "$HOME/.bashrc"
 
 
 echo -e '\033[32m ---> Instalando pacotes rvm...\033[m\n'
