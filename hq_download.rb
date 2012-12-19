@@ -1,7 +1,6 @@
-#coding: utf-8
-#!/usr/bin/env ruby -w
+#!/usr/bin/env ruby
+# encoding: utf-8
 
-require "rubygems"
 require "mechanize"
 require "nokogiri"
 require "open-uri"
